@@ -1,0 +1,75 @@
+@media (max-width: 912px) {
+  .container {
+    width: 90%;
+  }
+
+  h1,
+  h2 {
+    letter-spacing: 15px;
+    /* border: 2px solid white; */
+    padding: 10px;
+    /* display: inline; */
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .personal_info,
+  .goals_ideas {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .personal_info .about_me_img {
+    width: 100%;
+    border-right: none;
+    text-align: center;
+  }
+
+  .about_me_content,
+  .tech_goals {
+    width: 100%;
+    text-align: left;
+  }
+
+  .about_me_content p {
+    width: 100%;
+    font-size: 18px;
+    padding-bottom: 20px;
+  }
+
+  .tech_goals p {
+    width: 100%;
+    font-size: 18px;
+    padding: 20px 0;
+  }
+
+  .goals_ideas_img {
+    display: none;
+  }
+
+  .project_ideas p {
+    width: 100%;
+    font-size: 18px;
+  }
+
+  .date_time_links {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .date_time {
+    font-size: 18px;
+  }
+
+  .links a {
+    font-size: 18px;
+  }
+
+  footer {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 12px;
+  }
+}

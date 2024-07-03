@@ -5,88 +5,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Daniel Johnson | Aspiring Developer</title>
     <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/mediaquery.css" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/mediaquery.css" />
   </head>
   <body>
-    <header data-testid="header">
-      <img
-        src="./images/Daniel_J_resized.jpg"
-        alt="daniel johnson - profile picture"
-        data-testid="slackProfilePicture"
-      />
-      <div class="personal_info">
-        <h1>Daniel Johnson</h1>
-        <p>Aspiring Web Developer</p>
+    <div class="container" data-testid="container">
+      <h1>About Me</h1>
+      <div class="personal_info" data-testid="personal_info">
+        <div class="about_me_img">
+          <img
+            src="/images/Daniel_J_scaled.jpg"
+            alt="daniel johnson - profile picture"
+            data-testid="slackProfilePicture"
+          />
+        </div>
+        <div class="about_me_content">
+          <p>
+            I'm Daniel Johnson(xylemic), and I'm passionate about learning web
+            development. I'm particularly interested in the front-end side of
+            things, but I'm also curious about exploring back-end development in
+            the future. My journey in web development began with mastering
+            JavaScript, and I'm excited to delve deeper into this versatile
+            language.
+          </p>
+        </div>
       </div>
-    </header>
-    <main data-testid="main">
-      <div class="about-me">
-        <h2>About Me</h2>
+      <!-- separator -->
+      <div class="goals_ideas" data-testid="goals_ideas">
+        <div class="tech_goals">
+          <p>
+            In the next two years, I'm aiming to solidify my skills by becoming
+            proficient in core JavaScript concepts. I also want to delve into
+            front-end development by learning a couple of popular frameworks
+            like React, Angular, or Vue.js. Additionally, I'm keen on building a
+            foundational understanding of back-end development, encompassing
+            server-side programming languages and databases.
+          </p>
+        </div>
+        <div class="goals_ideas_img">
+          <img
+            src="/images/Daniel_J_scaled.jpg"
+            alt="daniel johnson - profile picture"
+            data-testid="slackProfilePicture"
+          />
+        </div>
+      </div>
+      <div class="project_ideas">
         <p>
-          I'm Daniel Johnson(xylemic), and I'm passionate about learning web
-          development. I'm particularly interested in the front-end side of
-          things, but I'm also curious about exploring back-end development in
-          the future. My journey in web development began with mastering
-          JavaScript, and I'm excited to delve deeper into this versatile
-          language.
+          To showcase my JavaScript skills and delve deeper into web
+          development, I have a few exciting project ideas in mind. Firstly, I
+          plan to enhance this very website by adding interactive features like
+          animations and dynamic content updates using JavaScript. Secondly, I'm
+          eager to build a simple single-page application (SPA) using a
+          front-end framework I'll learn, such as creating a weather app or a
+          to-do list app. Finally, to solidify my JavaScript knowledge in a fun
+          way, I'm interested in developing a web game like tic-tac-toe or a
+          memory game.
         </p>
       </div>
-      <div class="tech-goals">
-        <h2>Tech Goals (Next 2 Years)</h2>
-        <ul>
-          <li>Goal 1: Become proficient in core JavaScript concepts.</li>
-          <li>
-            Goal 2: Learn a couple of popular front-end frameworks (React,
-            Angular, Vue.js)
-          </li>
-          <li>
-            Goal 3: Gain a foundational understanding of back-end development
-            (server-side programming languages, databases).
-          </li>
-        </ul>
+      <div class="date_time_links">
+        <div class="date_time">
+          <div data-testid="current-time-utc"></div>
+          <div data-testid="current-day"></div>
+        </div>
+        <div class="links">
+          <section data-testid="links">
+            <a href="https://hng.tech/learn" data-testid="hngLink"
+              >HNG Internship</a
+            >
+            <a href="https://keyword.dog" data-testid="keywordLink"
+              >Keyword.dog</a
+            >
+            <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+              >Scrape Any Web</a
+            >
+          </section>
+        </div>
       </div>
-      <div class="project-ideas">
-        <h2>Project Ideas</h2>
-        <ul>
-          <li>
-            Project Idea 1: To enhance this personal website by adding
-            interactive features using JavaScript (e.g, animations, dynamic
-            content updates).
-          </li>
-          <li>
-            Project Idea 2: Building a simple single-page applaication (SPA)
-            using a front-end framework I must have learned (e.g, a weather app,
-            a to-do list app).
-          </li>
-          <li>
-            Project Idea 3: Developing a web game that utilizes my JavaScript
-            skills (e.g, tic-tac-toe, memory game).
-          </li>
-        </ul>
-      </div>
-
-      <div data-testid="current-time-utc"></div>
-      <div data-testid="current-day"></div>
-
-      <section data-testid="links">
-        <a href="https://hng.tech/learn" data-testid="hngLink"
-          >HNG Internship</a
-        >
-        <a href="https://keyword.dog" data-testid="keywordLink">Keyword.dog</a>
-        <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
-          >Scrape Any Web</a
-        >
-      </section>
-    </main>
+    </div>
     <footer>
       <p>Slack Name: <span data-testid="slackDisplayName">xylemic</span></p>
       <p>
         Slack Email:
         <span data-testid="slackEmail">danielbobbyjohnson@gmail.com</span>
       </p>
-      <p>&copy; 2024 | All rights reserved. Daniel Johnson.</p>
+      <p>&copy; 2024 | All rights reserved | Daniel Johnson.</p>
     </footer>
-    <script src="./js/index.js"></script>
+    <script src="/js/index.js"></script>
   </body>
 </html>
